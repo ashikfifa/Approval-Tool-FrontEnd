@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <meta name="robots" content="noindex,nofollow">
+    <title>Approval Tool</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+    <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+
+
+
+<style>
+     .carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 90px;
+    height: 90px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    
+    transition: opacity .6s ease;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8px;
+    width: none;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+</style>
+
+</head>
+
+<body>
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+       <!-- Start Topbar header -->
+        <header class="topbar" data-navbarbg="">
+              
+                  <!-- This is for the sidebar toggle which is visible on mobile only -->
+                  <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+                          class="ti-menu ti-close"></i></a>
+            
+          
+      </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6"style="padding-top: 0px !important">
+
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <!-- <nav class="sidebar-nav"> -->
+                    <ul id="sidebarn">
+                       
+                     
+                            <!--Start logo-->
+                            <div class="row"id="logoid">
+                                
+                              <img src="assets/images/users/cow-17.png" height="100px">
+                              
+                           </div>
+                            <!-- End logo-->
+                            <hr style="margin-top: -6%;">
+
+
+<!--Sidebar dropdown -->
+                            <ul id="myUL">
+                                <li>
+                                <span class="caret"> A170557-ADI-eCom-FTW</span>
+                                  <ul class="nested">
+                                    <li>Water</li>
+                                    <li>Coffee</li>
+                                    <li><span class="caret">Tea</span>
+                                      <ul class="nested">
+                                        <li>Black Tea</li>
+                                        <li>White Tea</li>
+                                        <li>
+                                            <span class="caret">Green Tea</span>
+                                          <ul class="nested">
+                                            <li>Sencha</li>
+                                            <li>Gyokuro</li>
+                                            <li>Matcha</li>
+                                            <li>Pi Lo Chun</li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </li>  
+                                  </ul>
+                                </li>
+                              </ul>
+
+                              <ul id="myUL">
+                                <li>
+                                <span class="caret">A172004-ADI-eCom-FTW</span>
+                                  <ul class="nested">
+                                    <li>Water</li>
+                                    <li>Coffee</li>
+                                    <li><span class="caret">Tea</span>
+                                      <ul class="nested">
+                                        <li>Black Tea</li>
+                                        <li>White Tea</li>
+                                        <li>
+                                            <span class="caret">Green Tea</span>
+                                          <ul class="nested">
+                                            <li>Sencha</li>
+                                            <li>Gyokuro</li>
+                                            <li>Matcha</li>
+                                            <li>Pi Lo Chun</li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </li>  
+                                  </ul>
+                                </li>
+                              </ul>
+
+                              <ul id="myUL">
+                                <li>
+                                <span class="caret">A172124-ADI-eCom-FTW</span>
+                                  <ul class="nested">
+                                    <li>Water</li>
+                                    <li>Coffee</li>
+                                    <li><span class="caret">Tea</span>
+                                      <ul class="nested">
+                                        <li>Black Tea</li>
+                                        <li>White Tea</li>
+                                        <li>
+                                            <span class="caret">Green Tea</span>
+                                          <ul class="nested">
+                                            <li>Sencha</li>
+                                            <li>Gyokuro</li>
+                                            <li>Matcha</li>
+                                            <li>Pi Lo Chun</li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </li>  
+                                  </ul>
+                                </li>
+                              </ul>
+
+
+                              <ul id="myUL">
+                                <li>
+                                <span class="caret">A172005-ADI-eCom-FTW</span>
+                                  <ul class="nested">
+                                    <li>Water</li>
+                                    <li>Coffee</li>
+                                    <li><span class="caret">Tea</span>
+                                      <ul class="nested">
+                                        <li>Black Tea</li>
+                                        <li>White Tea</li>
+                                        <li>
+                                            <span class="caret">Green Tea</span>
+                                          <ul class="nested">
+                                            <li>Sencha</li>
+                                            <li>Gyokuro</li>
+                                            <li>Matcha</li>
+                                            <li>Pi Lo Chun</li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </li>  
+                                  </ul>
+                                </li>
+                              </ul>
+
+                              <ul id="myUL">
+                                <li>
+                                <span class="caret">A172124-ADI-eCom-FTW</span>
+                                  <ul class="nested">
+                                    <li>Water</li>
+                                    <li>Coffee</li>
+                                    <li><span class="caret">Tea</span>
+                                      <ul class="nested">
+                                        <li>Black Tea</li>
+                                        <li>White Tea</li>
+                                        <li>
+                                            <span class="caret">Green Tea</span>
+                                          <ul class="nested">
+                                            <li>Sencha</li>
+                                            <li>Gyokuro</li>
+                                            <li>Matcha</li>
+                                            <li>Pi Lo Chun</li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </li>  
+                                  </ul>
+                                </li>
+                              </ul>
+
+                              <ul id="myUL">
+                                <li>
+                                <span class="caret">A170557-ADI-eCom-FTW</span>
+                                  <ul class="nested">
+                                    <li>Water</li>
+                                    <li>Coffee</li>
+                                    <li><span class="caret">Tea</span>
+                                      <ul class="nested">
+                                        <li>Black Tea</li>
+                                        <li>White Tea</li>
+                                        <li>
+                                            <span class="caret">Green Tea</span>
+                                          <ul class="nested">
+                                            <li>Sencha</li>
+                                            <li>Gyokuro</li>
+                                            <li>Matcha</li>
+                                            <li>Pi Lo Chun</li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </li>  
+                                  </ul>
+                                </li>
+                              </ul>
+
+                              <ul id="myUL">
+                                <li>
+                                <span class="caret">A172124-ADI-eCom-FTW</span>
+                                  <ul class="nested">
+                                    <li>Water</li>
+                                    <li>Coffee</li>
+                                    <li><span class="caret">Tea</span>
+                                      <ul class="nested">
+                                        <li>Black Tea</li>
+                                        <li>White Tea</li>
+                                        <li>
+                                            <span class="caret">Green Tea</span>
+                                          <ul class="nested">
+                                            <li>Sencha</li>
+                                            <li>Gyokuro</li>
+                                            <li>Matcha</li>
+                                            <li>Pi Lo Chun</li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                    </li>  
+                                  </ul>
+                                </li>
+                              </ul>
+
+                       
+
+                    </ul>
+
+              
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+
+
+
+        <div class="row"style="background-color:#eef5f9">
+            <div class="col-md-9"style="margin-top:3%">
+
+            </div>
+          
+            <!--Tool box-->
+            <div class="col-4 col-md-1"style="margin-top:1%">
+                <img src="assets/images/users/pentool-08.png"style="margin-top: -3%;">
+            </div>
+            <div class="col-4 col-md-1"style="margin-top:1%">
+                <img src="assets/images/users/text-09.png">
+            </div>
+            <div class="col-4 col-md-1"style="margin-top:1%">
+            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/images/users/1.png"style="margin-left: -32%;" alt="user" class="rounded-circle" width="31">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end user-dd animated" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="javascript:void(0)"><i class="bi bi-card-image"></i>
+                    Images</a>
+                <a class="dropdown-item" href="javascript:void(0)"><i class="bi bi-speedometer2"></i>
+                    Dashboard</a>
+                <a class="dropdown-item" href="javascript:void(0)"><i class="bi bi-lock"></i>
+                    Security</a>
+            </ul>
+        </div>
+       
+        </div>
+        
+
+        <div class="page-wrapper">
+         
+            <div class="page-breadcrumb">
+                <div class="row">
+
+
+                  <!--Start Middle section-->
+                    <div class="col-md-8">
+                      <div class="d-flex flex-row"style="margin-top:-8px">
+                        <div class="p-2">
+                         <h6> A170557-ADI-eCom-FTW </h6></div>
+                         <div class="p-2"> <input type="checkbox" id="selectall" onclick='selectAll(this.checked)'/></div>
+                     <div class="p-2" style="margin-top: -1%;">
+                     <hr id="lineipad" style="width: 360px;"></div>
+
+                     <div class="p-2">
+
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                          
+                        </button>
+                 
+                      
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                         <li><a class="dropdown-item" href="index6.html"><i class="bi bi-arrows-fullscreen"></i></a></li>
+                          <li> <a class="dropdown-item" href="index4.html"><i class="bi bi-file-easel"></i></a></li>
+                          <li> <a class="dropdown-item" href="index3.html"><i class="bi bi-list-ul"></i></a></li>
+                          <li> <a class="dropdown-item" href="index2.html"><i class="bi bi-grid"></i></a></li>
+                          <li><a class="dropdown-item" href="index.html"><i class="bi bi-grid-3x3-gap"></i></a></li>
+                        </ul>
+                      </div>
+                     
+                        
+                     </div>
+
+
+                    </div>
+
+                        <!--Start of zoom in out button-->
+
+                        <div class="row">
+                          <div class="col-4 col-md-5">
+
+                          </div>
+
+                          <div class="col-2 col-md-1">
+                            <i class="bi bi-zoom-in"></i>
+                          </div>
+
+                          <div class="col-2 col-md-1">
+                            <i class="bi bi-zoom-out"></i>
+                          </div>
+
+                          <div class="col-4 col-md-5">
+
+                          </div>
+
+
+                        </div>
+
+                         <!--End of zoom in out button-->
+
+<!--start carausal-->
+                     <div class="row">
+                      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"data-bs-touch="false" data-bs-interval="false">
+                       
+                        <div class="carousel-indicators"id="mobile-slider-view"style="bottom:-31%;overflow: auto;">
+                         
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="31"/>  <img src="assets/images/users/slide5.jpg" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="30"/> <img src="assets/images/users/slide4.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="29"/>  <img src="assets/images/users/slide5.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="28"/> <img src="assets/images/users/slide4.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 4">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="27"/> <img src="assets/images/users/slide5.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="active" aria-current="true" aria-label="Slide 5">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="26"/> <img src="assets/images/users/slide5.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" class="active" aria-current="true" aria-label="Slide 6">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="25"/> <img src="assets/images/users/slide4.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" class="active" aria-current="true" aria-label="Slide 7">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="24"/> <img src="assets/images/users/slide5.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" class="active" aria-current="true" aria-label="Slide 8">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="23"/> <img src="assets/images/users/slide4.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" class="active" aria-current="true" aria-label="Slide 9">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="22"/> <img src="assets/images/users/slide5.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" class="active" aria-current="true" aria-label="Slide 10">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="21"/> <img src="assets/images/users/slide5.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" class="active" aria-current="true" aria-label="Slide 11">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="20"/> <img src="assets/images/users/slide4.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" class="active" aria-current="true" aria-label="Slide 12">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="19"/> <img src="assets/images/users/slide5.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" class="active" aria-current="true" aria-label="Slide 13">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="18"/> <img src="assets/images/users/slide4.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13" class="active" aria-current="true" aria-label="Slide 14">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="17"/> <img src="assets/images/users/slide5.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14" class="active" aria-current="true" aria-label="Slide 15">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="16"/> <img src="assets/images/users/slide4.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="15" class="active" aria-current="true" aria-label="Slide 16">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="15"/> <img src="assets/images/users/slide5.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="16" class="active" aria-current="true" aria-label="Slide 17">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="14"/> <img src="assets/images/users/slide4.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="17" class="active" aria-current="true" aria-label="Slide 18">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="13"/> <img src="assets/images/users/slide5.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="18" class="active" aria-current="true" aria-label="Slide 19">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="12"/> <img src="assets/images/users/slide4.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="19" class="active" aria-current="true" aria-label="Slide 20">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="11"/> <img src="assets/images/users/slide5.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="20" class="active" aria-current="true" aria-label="Slide 21">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="10"/> <img src="assets/images/users/slide4.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="21" class="active" aria-current="true" aria-label="Slide 22">
+                          <input type="checkbox" class="selectedId" name="selectedId"  id="9"/> <img src="assets/images/users/slide5.jpg"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="22" class="active" aria-current="true" aria-label="Slide 23">
+                        </div> 
+                      
+                     
+                        <div class="carousel-inner">
+                          <div class="carousel-item active"> 
+                            <img src="assets/images/users/slide5.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          
+                          <div class="carousel-item">
+                            
+                            <img src="assets/images/users/slide4.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide5.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide4.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide5.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide5.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide4.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide5.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide4.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide5.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide5.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide4.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide5.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide4.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide5.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide4.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide5.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide4.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide5.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide4.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide5.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide4.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/images/users/slide5.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                     
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span  style="margin-left: -98%;background-color: black;"class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span style="margin-right: -98%;background-color: black;"class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+
+                      
+                      </div>
+
+      </div>
+
+       <!--End Middle section-->
+
+       <!--Start right section-->
+                    <div class="col-md-4">
+                        <div class="card"id="card-slider-mobile"style="margin-top:5px">
+                        <div class="card-body">
+                            <h4 class="card-title">Comment Box</h4>
+
+                            <select id="inputState" class="form-control"name="option">
+                              <option selected> --Image Name-- </option>
+                              <option>Image Name1</option>
+                              <option>Image Name2</option>
+                              <option>Image Name3</option>
+                            </select>
+
+                                
+                                <br><br>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1"style="color: #125a31;font-weight: 600">Feedback</label>
+                                        <textarea class="form-control"placeholder="Write your instruction here" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                      </div>
+
+                                      <br>
+
+                                      <div class="form-group">
+                                        <label for="exampleFormControlFile1"> Attachments(Optional) </label>
+                                        <input style="background-color:#eef5f9"type="file" class="form-control-file" id="exampleFormControlFile1">
+                                      </div>
+                            </form>
+                            
+                            <h4>Info</h4>
+                            
+                               <p> File Name:</p>
+                               <p> Item Type:</p>
+                               <p> Uploaded by:</p>
+                               <p> Update Date:</p>
+                               <p> Dimension:</p>
+                               <p> Size:</p>
+
+                          <div class="row">
+                            <div class="col-6 col-md-6">
+                              <button id="appr">Approve</button> 
+                            </div>
+                            <div class="col-6 col-md-6">
+                              <button id="rej">Reject</button>
+                            </div>
+                          </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+             <!--End of  right section-->
+             <div class="row">
+              <div class="col-8 col-md-9"style="margin-left:3%">
+            <p>Total Images: <br>
+            <strong>Selected: </strong></p>
+            
+          </div>
+          <div class="col-4 col-md-3">
+            
+          
+          </div>
+
+        </div>
+             <!--End of  right section-->
+            <footer>
+              <p style="text-align:center;color:white;padding:8px;background-color:black">Designed And Developed By <a href="https://cutoutwiz.com" target="_blank"  style="text-decoration:none;color:white">CutOutWiz</a></p>
+         </footer>
+
+            </div>
+       
+            
+        </div>
+        
+    </div>
+    
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <script src="assets/js/custom.js"></script>
+
+
+<script>
+
+  function selectAll(status) {
+     $('input[name=selectedId]').each(function(){
+        $(this).prop('checked', status);
+     });
+  }
+  </script>
+</body>
+
+</html>
